@@ -1,4 +1,4 @@
-# 🎓 AI Curriculum Architect & Explainer Engine
+# 🎓 AI Curriculum Architect & Explainer Engine ( The Explainer )
 
 The **AI Curriculum Architect** is an automated, two-phase educational pipeline built with Python, Streamlit, and HyperFrames. It allows a user to input an abstract topic, automatically generate a comprehensive educational curriculum (with a narrative monologue), and perfectly orchestrate that monologue into a synchronized, 15-second Manim-style kinetic typography video.
 
@@ -57,8 +57,3 @@ Launch the Streamlit dashboard:
 ```bash
 streamlit run app.py
 ```
-
-## ☁️ Deployment Note (Vercel vs. Docker)
-This application **cannot** be deployed to serverless frontend platforms like Vercel due to its reliance on WebSockets (Streamlit), heavy system binaries (`ffmpeg`, `npx`), and long-running video rendering processes that exceed serverless timeouts. 
-
-To deploy this to production, host it as a Docker container on platforms like **Render**, **Railway**, or **Google Cloud Run**.
